@@ -1,0 +1,334 @@
+body {
+    font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    position: relative;
+  }
+  #gotop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;    
+    padding: 10px 15px;    
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+
+  a {
+    color: #000000;
+  }
+  
+  .invert h1::after,
+  .invert h2::after {
+    background-color: #fff;
+  }
+  
+  .btn {
+    background-color: #407ef0;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.75rem 1.75rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+  }
+  
+  .navbar {
+    border-bottom: solid 1px #fff;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .solid {
+    background: #fff;
+    border-bottom: solid 1px #fff;
+    opacity: 1;
+    transition: 0.9s;
+  }
+  
+  .whiteNav {
+    color: #fff !important;
+  }
+  
+  .navbar-brand {
+    color: rgb(44, 27, 27) !important;
+  }
+  
+  .active {
+    color: #4086f0;
+    font-weight: bold;
+  }
+  
+  .navbar-brandActive {
+    color: #4086f0 !important;
+    font-size: 1.3rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar-brand {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .invert {
+    background: #4092f0;
+    color: #fff;
+  }
+  
+  .invert .btn {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* ===============================================================top================================================================== */
+  
+  .top-hero {
+    background: url(../images/header.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    padding: 30vh 15% 0;
+  }
+  
+  .top-hero h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .top-hero p {
+    padding: 0 10% 1rem;
+    color: #ffffff99;
+  }
+  
+  .top-hero h1,
+  .top-hero .btn {
+    text-transform: uppercase;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .top-hero {
+      padding: 20vh 10% 0;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .top-hero {
+      height: 85vh;
+    }
+    .top-hero h1 {
+      font-size: 8vw;
+    }
+    .top-hero .btn {
+      text-transform: uppercase;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .top-hero .btn {
+      font-size: 0.5rem;
+    }
+  }
+  
+
+    /* ===============================================================photo================================================================== */
+  
+    .photo{
+      background: #a4e000;
+      padding: 7% 20%;
+     
+    }
+
+    .photo img {
+      border-radius: 7%;
+    }
+    
+    .album:hover {
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    .album {
+      margin-top: 20px;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+      .photo {
+        padding: 7% 10%;
+      }
+    }
+    
+    @media only screen and (max-width: 992px) {
+      .photo {
+        padding: 7% 5%;
+      }
+    }
+    
+    .photo p {
+      color: #00000099;
+    }
+    
+    
+    .photo .btn {
+      background-color: #fff;
+      color: #000;
+    }
+  /* ===============================================================about================================================================== */
+  
+  .about {
+
+    background: url(../images/bg1.png) no-repeat center center;
+    background-size: cover;
+    padding: 10% 20%;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .about {
+      padding: 7% 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .about {
+      padding: 7% 5%;
+    }
+  }
+  
+  .about p {
+    color: #00000099;
+  }
+
+  .about h2 {
+    color: #00000099;
+  }
+  .about .btn {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* ===============================================================hobby================================================================== */
+  
+  .hobby {
+    text-align: center;
+    padding: 8% 0;
+  }
+  
+  .hobby i.fa {
+    color: #4060f0;
+  }
+
+  .hobby i.fas {
+    color: #4060f0;
+  }
+  
+  .hobby .row h4 {
+    margin: 1rem;
+  }
+  
+  .hobby p {
+    color: #00000099;
+  }
+  
+  /* ===============================================================refer================================================================== */
+  
+  .refer {
+    background: url(../images/bg2.png) no-repeat center center;
+    background-size: cover;
+    padding:2% 0%;
+  }
+  
+  .refer  p {
+    color: #ffffff99;
+  }
+  
+  .refer .container-fluid,
+  .refer  .row > div {
+    padding: 0;
+    position: relative;
+  }
+  
+  .refer c .row {
+    margin: 0;
+  }
+  
+  .refer .hint {
+    opacity: 0;
+    transition: opacity 2s;
+    background: #6da4e4e6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff99;
+  }
+  
+  .refer .hint:hover {
+    opacity: 1;
+  }
+  
+  .refer .hint span.word {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .refer h2 {
+    margin: 1.5rem 0;
+  }
+
+  
+  
+  /* ===============================================================contact================================================================== */
+  
+  .contact {
+    padding: 7% 10%;
+  }
+  
+  .contact p {
+    padding: 0 20% 1rem;
+    color: #00000099;
+  }
+  
+  .contact .contacts {
+    margin: 2rem 0;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .contact {
+      padding: 7% 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .contact {
+      padding: 7% 5%;
+    }
+  }
+
+  footer{
+    background-color: rgb(0, 119, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+
+  }
